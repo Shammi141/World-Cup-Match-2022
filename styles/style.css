@@ -1,0 +1,229 @@
+
+/* common styles or utilities */
+*{
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Poppins', sans-serif;
+    
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* style of top section */
+.container {
+    margin-top: 20px;
+    background-color: #161616;
+    width: 85%;
+    height: 70%;
+    border-radius: 10px;
+}
+.top-section{
+    display: flex;
+}
+.title-info{
+    color: white;
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+h1{
+    font-size: 37px;
+    width: 70%;
+}
+.title-details{
+    /* width: 70%; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.watch-live{
+    height: 35px;
+    width: 100px;
+    background-color: rgb(245, 119, 119);
+    border-radius: 3px;
+}
+.watch-live a{
+    text-decoration: none;
+    color: white;
+}
+.watch-live:hover{
+    background-color: red;
+    height: 40px;
+    width: 110px;
+    transition: .5s ease-in;
+}
+
+.title-info img{
+    width: 100%;
+}
+
+/* Style of Buttons and blogs*/
+.buttons-blogs{
+    margin-top: 80px;
+    display: flex;
+    width: 85%;
+    margin-bottom: 100px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+    height: 180px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+.button1{
+    text-decoration: none;
+    height: 40px;
+    width: 120px;
+    color: black;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(235, 201, 201); 
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7px;
+    grid-row-gap: 60px;
+}
+.blog{
+    height: 310px;
+    /* width: 270px; */
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    background-color: aliceblue;
+}
+.blogs .blog-banner img{
+    height: 160;
+    width: 290px;
+}
+.transfer-button{
+    background-color: rgb(235, 201, 201);
+    border-radius: 5px;
+}
+.view-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* style of view all button */
+.view-all{
+    background-color: rgb(225, 37, 37);
+    height: 35px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid gray;
+}
+.view-all a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* style of footer */
+footer {
+    background-color: #161616;
+    height: 280px;
+}
+
+.footer-title {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid grey;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 15px 20px;
+}
+
+
+/* style of media queries */
+
+/* style of hiding View All button from large device */
+@media only screen and (min-width:993px){
+    .view-all {
+        display: none;
+    }
+    
+}
+
+/* for tablet view */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 85%;
+    }
+    .buttons-blogs{
+        flex-direction: column;
+    }
+    .buttons{
+        margin-left: 190px;
+        background-color: white;
+        flex-direction: row;           
+    }
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-info {
+        margin-left: 90px;
+        width: 75%;
+    }
+
+}
+
+
+
+/* for mobile device */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 85%;
+    }
+    .top-section, .buttons-blogs{
+        flex-direction: column;
+    }
+    .buttons{
+        background-color: white;
+    }
+    .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer{
+        height: 400px;
+    }
+    .footer-info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-info a{
+        padding-top: 0px;
+        padding-bottom: 1px;
+    }
+    .view-all {
+        display: none;
+    }
+    
+}
+
+
+
