@@ -40,7 +40,7 @@ h1{
 }
 .watch-live{
     height: 35px;
-    width: 100px;
+    width: 130px;
     background-color: rgb(245, 119, 119);
     border-radius: 3px;
 }
@@ -75,14 +75,18 @@ h1{
     height: 180px;
     background-color: #161616;
     border-radius: 10px;
+    
 }
 .button1{
     text-decoration: none;
     height: 40px;
     width: 120px;
+    text-align: center;
+    font-size: 14px;
     color: black;
     border-radius: 5px;
     margin-top: 10px;
+    margin-left: 3px;
     background-color: rgb(235, 201, 201); 
 }
 
@@ -93,7 +97,7 @@ h1{
     grid-row-gap: 60px;
 }
 .blog{
-    height: 310px;
+    height: 330px;
     /* width: 270px; */
     margin-left: 10px;
     border-radius: 10px;
@@ -101,8 +105,8 @@ h1{
     background-color: aliceblue;
 }
 .blogs .blog-banner img{
-    height: 160;
-    width: 290px;
+    height: 150;
+    width: 100%;
 }
 .transfer-button{
     background-color: rgb(235, 201, 201);
@@ -132,7 +136,7 @@ h1{
 /* style of footer */
 footer {
     background-color: #161616;
-    height: 280px;
+    height: 300px;
 }
 
 .footer-title {
@@ -155,6 +159,20 @@ hr {
     color: white;
     text-decoration: none;
     padding: 20px 15px 20px;
+}
+.social-info{
+    text-align: center;
+    
+}
+.social-media{
+    display: flex;
+    margin-top: 55px;
+    justify-content: space-around;
+
+}
+.telegram, .linkedin, .facebook, .twiter{
+    color: white;
+    font-size: 25px;
 }
 
 
@@ -221,6 +239,10 @@ hr {
     }
     .view-all {
         display: none;
+    }
+    .social-media{
+        margin-top: 2px;
+
     }
     
 }
