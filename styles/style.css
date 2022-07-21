@@ -1,6 +1,9 @@
 
-/* common styles or utilities */
+/* ...............common styles or utilities */
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lobster Two', cursive;
     font-family: 'Poppins', sans-serif;
     
@@ -12,7 +15,9 @@ main {
 
 }
 
-/* style of top section */
+
+
+/*................... start of top section style */
 .container {
     margin-top: 20px;
     background-color: #161616;
@@ -24,42 +29,42 @@ main {
     display: flex;
 }
 .title-info{
-    color: white;
+    color: #ffffff;
     width: 50%;
     padding-left: 100px;
     padding-top: 40px;
 }
 h1{
     font-size: 37px;
-    width: 70%;
+    width: 80%;
 }
 .title-details{
-    /* width: 70%; */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-.watch-live{
-    height: 35px;
-    width: 130px;
-    background-color: rgb(245, 119, 119);
-    border-radius: 3px;
-}
-.watch-live a{
+.watch-live {
     text-decoration: none;
-    color: white;
+    background-color:#ff0000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
 }
-.watch-live:hover{
-    background-color: red;
-    height: 40px;
-    width: 110px;
-    transition: .5s ease-in;
+.watch-live:hover {
+    background-color: #d69a9a;
+    transition: .7s ease-in;
+    color: #000000;
+    border: 1px solid #ffffff;
 }
 
 .title-info img{
     width: 100%;
 }
+/*................... end of top section style */
 
-/* Style of Buttons and blogs*/
+
+
+
+/* ......................start of Buttons and blogs style*/
 .buttons-blogs{
     margin-top: 80px;
     display: flex;
@@ -71,23 +76,29 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 265px;
+    min-width: 300px;
     height: 180px;
     background-color: #161616;
     border-radius: 10px;
-    
 }
 .button1{
     text-decoration: none;
-    height: 40px;
     width: 120px;
     text-align: center;
     font-size: 14px;
     color: black;
     border-radius: 5px;
+    padding: 10px;
     margin-top: 10px;
     margin-left: 3px;
-    background-color: rgb(235, 201, 201); 
+    background-color: #ebc9c9; 
+}
+.button1:hover{
+    background-color: #847070;
+    
+}
+#btn-blog{
+    background-color: #ff0000;
 }
 
 .blogs{
@@ -97,8 +108,8 @@ h1{
     grid-row-gap: 60px;
 }
 .blog{
-    height: 330px;
-    /* width: 270px; */
+    height: fit-content;
+    padding-bottom: 5px;
     margin-left: 10px;
     border-radius: 10px;
     border: 1px solid #dcdcdc;
@@ -108,32 +119,46 @@ h1{
     height: 150;
     width: 100%;
 }
+.blog-detail{
+    margin-top: 10px;
+    margin-left: 8px;
+}
 .transfer-button{
-    background-color: rgb(235, 201, 201);
+    background-color: #ebc9c9;
     border-radius: 5px;
 }
 .view-info{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
+.time{
+    margin-right: 20px;
+}
+/* ......................end of Buttons and blogs style*/
 
-/* style of view all button */
+
+
+
+/*................start of view all button style */
 .view-all{
-    background-color: rgb(225, 37, 37);
+    background-color: #e12525;
     height: 35px;
     width: 100px;
     border-radius: 4px;
     text-align: center;
     border: 1px solid gray;
+    margin-bottom: 75px;
 }
 .view-all a{
     text-decoration: none;
     color: white;
 }
+/*................end of view all button style */
 
 
-/* style of footer */
+
+
+/*...............start of footer style*/
 footer {
     background-color: #161616;
     height: 300px;
@@ -143,16 +168,20 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 hr {
     border: 1px solid grey;
     width: 80%;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .footer-info {
     text-align: center;
+    margin-top: 20px;
 }
 
 .footer-info a {
@@ -166,30 +195,40 @@ hr {
 }
 .social-media{
     display: flex;
-    margin-top: 55px;
-    justify-content: space-around;
+    margin-top: 20px;
+    column-gap: 20px;
+    justify-content: center;
 
 }
-.telegram, .linkedin, .facebook, .twiter{
-    color: white;
+.fa-linkedin-in, .fa-facebook, .fa-twitter{
     font-size: 25px;
+    color: white;
 }
+/*...............end of footer style*/
 
 
-/* style of media queries */
 
-/* style of hiding View All button from large device */
+
+
+
+/*................... style of media queries................. */
+
+/*..............style of hiding View All button from large device */
 @media only screen and (min-width:993px){
+
     .view-all {
         display: none;
     }
     
 }
+/* ...............end */
 
-/* for tablet view */
+/* ......................start of tablet view */
 @media only screen and (min-width:688px) and (max-width:992px) {
     .container {
+        height: 600px;
         width: 85%;
+
     }
     .buttons-blogs{
         flex-direction: column;
@@ -197,7 +236,13 @@ hr {
     .buttons{
         margin-left: 190px;
         background-color: white;
-        flex-direction: row;           
+        flex-direction: row;
+        width: 65%;  
+        margin: 0 auto;  
+        column-gap: 10px;       
+    }
+    .button1{
+        width: 80%;
     }
     .blogs {
         grid-template-columns: repeat(2, 1fr);
@@ -206,25 +251,35 @@ hr {
         margin-left: 90px;
         width: 75%;
     }
-
 }
+/* ......................end of tablet view */
 
 
 
-/* for mobile device */
+/*..................start mobile view */
 
 @media only screen and (max-width:688px) {
     .container{
         width: 85%;
+        margin: 0 auto;
+        
     }
     .top-section, .buttons-blogs{
         flex-direction: column;
     }
+    .title-info{
+        width: 80%;
+    }
     .buttons{
-        background-color: white;
+        background-color: #ffffff;
+    }
+    .button1{
+        width: 170px;
     }
     .blogs{
         grid-template-columns: repeat(1,1fr);
+        width: 85%;
+        margin: 0 auto;
     }
     .footer{
         height: 400px;
@@ -246,6 +301,6 @@ hr {
     }
     
 }
-
+/*..................end mobile device */
 
 
