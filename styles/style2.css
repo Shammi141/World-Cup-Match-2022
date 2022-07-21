@@ -141,6 +141,27 @@ h1 {
 
 
 
+/*................start of view all button style */
+.view-all {
+    background-color: #e12525;
+    height: 35px;
+    width: 100px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 75px;
+}
+
+.view-all a {
+    text-decoration: none;
+    color: white;
+}
+
+/*................end of view all button style */
+
+
+
+
 /*...............start of footer style*/
 footer {
     background-color: #161616;
@@ -193,6 +214,18 @@ hr {
 
 
 /* .................for media queries.................. */
+
+
+/*..............style of hiding View All button from large device */ 
+@media only screen and (min-width:993px) {
+
+    .view-all {
+        display: none;
+    }
+
+}
+
+/* ...............end */
 
 
 /* .............for tablet view */
