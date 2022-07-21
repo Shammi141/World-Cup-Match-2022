@@ -109,8 +109,8 @@ h1 {
 .matchs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 17px;
-    grid-row-gap: 50px;
+    grid-column-gap: 7px;
+    grid-row-gap: 60px;
     margin: 0 auto;
 }
 
@@ -292,7 +292,7 @@ hr {
     
         .matchs {
             grid-template-columns: repeat(1, 1fr);
-            width: 85%;
+            width: 50%;
             margin: 0 auto;
         }
     
